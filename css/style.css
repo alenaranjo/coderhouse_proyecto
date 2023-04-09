@@ -248,6 +248,22 @@ header{
 }
 .bg-body-tertiary {
   --bs-bg-opacity: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  align-items: center;
+  align-content: space-around;
+  justify-content:space-around;
+}
+
+.navbar-collapse{
+  width: 200px;
+  flex-grow: 0;
+  /* background-color: #8b1852; */
+}
+
+.collapse{
+  width: 500px;
 }
 
 .navbar-nav a{
@@ -423,7 +439,6 @@ footer p{
 }
 
 /* PAGE ABOUT US */
-
 .about_us_container{
   display: grid;
   grid-template-rows: 1fr 1fr;
@@ -710,6 +725,9 @@ footer p{
 }
 
 /* PAGE CONTACT US */
+.main_contact{
+  margin-bottom: 50px;
+}
 .astronaut4{
   width: 200px;
   height: 300px;
@@ -717,23 +735,14 @@ footer p{
   background-size: contain;
 }
 
-.main_contact{
-  width: 1100px;
-  height: 550px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  background-clip: padding-box;
-}
-
 .contact_container{
-  width: 1100px;
-  height: 550px;
-  display: flex;
-  flex-direction: row;
-  align-items: start;
-  background-clip: padding-box;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  column-gap: 20px;
+  /* padding: 80px 80px 80px 80px; */
 }
 
 .contact_us{
@@ -759,7 +768,7 @@ footer p{
   position: absolute;
   inset: 0;
   border-radius: 25px;
-  padding: 5px; /* control the border thickness */
+  padding: 4px; /* control the border thickness */
   background: linear-gradient(45deg, #00B4DC, #FF0080);
   -webkit-mask: 
     linear-gradient(#fff 0 0) content-box, 
@@ -769,12 +778,45 @@ footer p{
   pointer-events: none;
 }
 
-#name, #email, #textarea{
-  background: rgba(255, 255, 255, 0.537);
+#textarea{
+  border: none;
+  background: transparent;
   text-decoration: none;
   font-family: 'Roboto';
-  color: #9DE0E9;
+  color: #da9de9;
   border-bottom: #00B4DC;
+}
+
+.contact_us #name, #email {
+  width: 350px;
+  border: none;
+  border-bottom: 1px solid #00D1FF;
+  background: transparent;
+  outline: none;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.contact_us ::placeholder{
+  color: #9DE0E9;
+}
+
+.contact_us input{
+  position: relative;
+  width: 180px;
+  height: 45px;
+  left: -20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #FF0080;
+  color: white;
+}
+
+.icon_send{
+  position: relative;
+  top: 2px;
+  left: 12px;
+  z-index: 2;
 }
 
 /* PAGE PROJECTS */
