@@ -438,6 +438,22 @@ footer p{
   font-size: .8rem;
 }
 
+#social li div{
+  width: 35px;
+  height: 35px;
+  /* background-color: #00D1FF; */
+}
+
+.fb, .in, .ig, .wp{
+  transition: .3s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.fb:hover, .in:hover, .ig:hover, .wp:hover, .ig:hover{
+  width: 35px;
+  height: 35px;
+  filter: brightness(0) saturate(100%) invert(72%) sepia(36%) saturate(6063%) hue-rotate(151deg) brightness(102%) contrast(109%);
+}
+
 /* PAGE ABOUT US */
 .about_us_container{
   display: grid;
@@ -645,16 +661,6 @@ footer p{
   top: 0;
   float: right;
   right: 20px;
-}
-
-#services_container{
-  position: relative;
-  width: 700px;
-  height: 450px;
-  top: 0;
-  background-clip: padding-box;
-  overflow: hidden;
-  /* background-color: rgba(32, 0, 57, 0.5); */
 }
 
 .wrapper2 {
@@ -973,6 +979,30 @@ footer p{
     width: 100%;
     background: hwb(0 0% 100% / 0.5);
   }
+
+  /* SERVICES */
+  #section_services{
+    display: grid;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+    column-gap: 100px;
+    padding: 0 80px 0 80px;
+    color: white;
+    font-family: 'Montserrat';
+  }
+  
+  .article3{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    column-gap: 100px;
+    padding: 0 80px 0 80px;
+    color: white;
+    font-family: 'Montserrat';
+  }
+  
 }
 
 @media only screen and (max-width: 768px) {
@@ -1058,7 +1088,14 @@ footer p{
   
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 558px) {
+  /* INDEX */
+  .astronaut_index{
+    width: 250px;
+    height: 250px;
+    background-size: contain;
+  }
+
   /* ABOUT US */
   .about_us_container{
     display: grid;
@@ -1093,5 +1130,212 @@ footer p{
     flex-direction: column;
     gap: 30px;
     padding: 50px;
+  }
+
+  /* SERVICES */
+  .article3 p, .cap p{display: none;}
+  #services_container{
+    /* width: 100%; */
+    padding: 0;
+  }
+
+  #section_services{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .wrapper2 {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px 10px 10px 10px;
+    flex-direction: column;
+  }
+
+  .cap{
+    width: 60px;
+    height: 140px;
+    display: grid;
+    grid-template-rows: 1fr;
+    flex-direction: row;
+    align-items:center;
+    justify-self: center;
+    justify-items:center;
+  }
+  
+  .cap h3{
+    font-size: 14px;
+    grid-column: 2 /1;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+  }
+  
+  .cap p{
+    position: relative;
+    font-size: 13px;
+    width: 60px;
+    grid-column: 1 /1;
+  }
+
+  /* FOOTER */
+  #nav_footer{
+    width: 270px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .6rem;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-around;
+    justify-content:space-around;
+    /* background-color: #FF0080; */
+  }
+  
+  #nav_footer li{
+    text-align: center;
+    width: 90px;
+    /* background-color: #FF0080; */
+  }
+  
+  #nav_footer a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  footer p{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .6rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  /* INDEX */
+  .astronaut_index{
+    width: 250px;
+    height: 250px;
+    background-size: contain;
+  }
+
+  /* ABOUT US */
+  .about_us_container{
+    display: grid;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+    column-gap: 10px;
+    padding: 0 00px 0 00px;
+    color: white
+  }
+
+  .article2{
+    width: 80%;
+  }
+  
+  .astronaut_about_us{
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+  }
+
+  #tooling_container{
+    width: 350px;
+    height: 1070px;
+    transform: scale(.7);
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 200px;
+    padding: 50px 10px 10px 10px;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px;
+  }
+
+  /* SERVICES */
+  .article3 p, .cap p{display: none;}
+  .section_services{
+    width: 80%;
+    padding: 0;
+  }
+
+  .astronaut3{
+    width: 260px;
+    height: 210px;
+  }
+  .wrapper2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px 10px 10px 10px;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px;
+  }
+
+  .cap{
+    width: 60px;
+    height: 140px;
+    display: grid;
+    grid-template-rows: 1fr;
+    flex-direction: row;
+    align-items:center;
+    justify-self: center;
+    justify-items:center;
+  }
+  
+  .cap h3{
+    font-size: 14px;
+    grid-column: 2 /1;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+  }
+  
+  .cap p{
+    position: relative;
+    font-size: 13px;
+    width: 60px;
+    grid-column: 1 /1;
+  }
+
+  /* FOOTER */
+  #nav_footer{
+    width: 270px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .6rem;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-around;
+    justify-content:space-around;
+    /* background-color: #FF0080; */
+  }
+  
+  #nav_footer li{
+    text-align: center;
+    width: 90px;
+    /* background-color: #FF0080; */
+  }
+  
+  #nav_footer a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  footer p{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .6rem;
   }
 }
