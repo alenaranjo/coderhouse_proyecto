@@ -1,0 +1,49 @@
+/* INDEX HOME CONTENT */
+.astronaut_index{
+    width: 400px;
+    height: 400px;
+    right: 330px;
+    background: url(../../svg/astraunat_index.svg) no-repeat;
+    background-size: contain;
+  }
+  
+  .astronaut1{
+    top: 0;
+    float: right;
+    right: 50px;
+    width: 300px;
+  }
+  
+  
+  #home_section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      justify-items: center;
+      column-gap: 100px;
+      padding: 0 80px 0 80px;
+
+      .article1 h1 {
+          color: white;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 700;
+      }
+
+      .article1 h2{
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+      }
+
+      .article1 p{
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        opacity: .5;
+      }
+
+      .headline1_index{
+        font-size: 5rem;
+      }
+
+  }
