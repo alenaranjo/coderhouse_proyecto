@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="../style/css/style.css" />
   <title>AleNaranjo_Developer</title>
 </head>
@@ -24,19 +25,19 @@
             <a class="nav-link" href="about_us.html">About us</a>
             <a class="nav-link" href="services.html">Services</a>
             <a class="nav-link" href="contact_us.html">Contact us</a>
-            <a class="nav-link" href="contact_us.html">Projects</a>
+            <a class="nav-link" href="projects.html">Projects</a>
           </div>
         </div>
       </div>
     </nav>
   </header>
 
-  <main>
+  <main id="main_about_us" data-aos="fade-in" data-aos-duration="1000"  data-aos-delay="250">
     <section class="about_us_container">
-      <figure class="astronaut2">
+      <figure data-aos="fade-up" data-aos-duration="1000" data-aos-delay="450" class="astronaut2">
         <div class="astronaut_about_us"></div>
         <p>
-          I am a Frontend engineer with more than four years of experience. recognized as a practical and effective developer, experienced in leading cross-functional teams in a time-pressured setting to complete projects on schedule and within budget.
+          I can create innovative and dynamic web solutions that are tailored to meet the unique needs of our clients. From crafting engaging user interfaces to building seamless interactive experiences, we harness the power of these advanced technologies to deliver exceptional results. Trust us to bring your vision to life with our mastery of JavaScript, React, HTML5, CSS3, and video editing.
         </p>
       </figure>
       <article class="article2">
@@ -117,7 +118,9 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ delay: 12,});
+  </script>
 </body>
-<script>
-</script>
 </html>

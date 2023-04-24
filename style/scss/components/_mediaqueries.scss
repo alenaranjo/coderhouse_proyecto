@@ -1,22 +1,21 @@
-/* MEDIAQUERIES */
-  @media only screen and (max-width: 991px) {
-    /* For mobile IPAD: */
-  
-    main{
-      position: relative;
-      margin-top: 0px;
-      height: 100%;
-      /* background-color: rgba(32, 0, 57, 0.5); */
-    }
-  
-    /* INDEX */
+//---------------------------------------------------//
+/*************** MEDIAQUERIES **************/
+@media only screen and (max-width: 991px) {
+   //INDEX
     #home_section{
       display: grid;
-      grid-template-columns: 300px 300px;
+      grid-template-columns: 1fr 1fr;
       align-items: center;
       justify-items: center;
       column-gap: 50px;
       padding: 0 80px 0 80px;
+
+      .article1 h1 {
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 3em;
+        font-weight: 700;
+    }
     }
   
     .headline1_index{
@@ -27,7 +26,7 @@
       width: 300px;
       height: 300px;
       right: 330px;
-      background: url(../../svg/astraunat_index.svg) no-repeat;
+      background: url('../../../svg/astraunat_index.svg') no-repeat;
       background-size: contain;
     }
     
@@ -42,19 +41,8 @@
       width: 100%;
       background: hwb(0 0% 100% / 0.5);
     }
-  
-    /* SERVICES */
-    #section_services{
-      display: grid;
-      grid-template-rows: 1fr;
-      align-items: center;
-      justify-items: center;
-      column-gap: 100px;
-      padding: 0 80px 0 80px;
-      color: white;
-      font-family: 'Montserrat';
-    }
-    
+
+    //SERVICES
     .article3{
       display: grid;
       grid-template-columns: 1fr;
@@ -66,10 +54,24 @@
       font-family: 'Montserrat';
     }
     
+    .article3 p{
+      text-align: center;
+      opacity: .7;
+    }
+
+    //PROJECTS
+    #projects_container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      padding: 10px 10px 10px 10px;
+      flex-direction: column;
+      justify-content: center;
+      gap: 80px;
+      padding: 20px;
+    }
   }
   
   @media only screen and (max-width: 768px) {
-    /* For large mobile: */
     /* INDEX */
     #home_section{
       display: grid;
@@ -78,6 +80,28 @@
       justify-items: center;
       column-gap: 100px;
       padding: 0 80px 0 80px;
+
+      .article1 h1{
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 2.2rem;
+      }
+    
+      .article1 h2{
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 1.5rem;
+      }
+      
+      .article1 p{
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 0.8rem;
+        opacity: .5;
+      }
     }
   
     .astronaut1{
@@ -89,330 +113,293 @@
       order: 2;
     }
     
-    
-    .article1 h1{
-      color: white;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 700;
-    }
-    
-    .article1 h2{
-      color: white;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 700;
-    }
-    
-    .article1 p{
-      color: white;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 500;
-      opacity: .5;
-    }
-    
-    
     .headline1_index{
       font-size: 3rem;
     }
-  
-    /* ABOUT US */
-  
-    .astronaut2{
+
+    //ABOUT US
+    .about_us_container{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        column-gap: 100px;
+        padding: 0 80px 0 80px;
+        color: white;
+        .astronaut2{
+            display: grid;
+            grid-template-columns: 1fr;
+            align-items: center;
+            justify-items: center;
+            column-gap: 100px;
+            padding: 0 80px 0 50px;
+
+              p{
+                text-align:center;
+              }
+            
+              .astronaut_about_us{
+                width: 250px;
+                height: 250px;
+                background-size: contain;
+              }
+          }
+
+          
+
+          .article2 {
+            #tooling_container{
+                position: relative;
+                width: 500px;
+                height: 570px;
+                margin-bottom: 20px;
+
+                .wrapper {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    padding: 50px 10px 10px 10px;
+                    flex-direction: column;
+                    gap: 30px;
+                    padding: 50px;
+    
+                    p {
+                        position: relative;
+                        top: 10px;
+                        width: 120px;
+                        height: 40px;
+                        margin-left: 60px;
+                        vertical-align: middle;
+                        color: white;
+                    }
+                  }
+              }
+          }
+    }
+
+    .contact_container{
+      width: 100%;
       display: grid;
       grid-template-columns: 1fr;
       align-items: center;
       justify-items: center;
-      column-gap: 100px;
-      padding: 0 80px 0 80px;
-    }
-  
-    .astronaut2 p{
-      text-align:center;
-    }
-  
-    .astronaut_about_us{
-      width: 250px;
-      height: 250px;
-      background-size: contain;
-    }
-  
-    #tooling_container{
-      width: 500px;
-      height: 570px;
-    }
-  
-    .wrapper {
-      display: grid;
-      grid-template-columns: 200px 200px;
-      padding: 50px 10px 10px 10px;
-      flex-direction: column;
-      gap: 30px;
-      padding: 50px;
+      column-gap: 20px;
+      /* padding: 80px 80px 80px 80px; */
     }
     
-  }
+
   
-  @media only screen and (max-width: 558px) {
+  @media only screen and (max-width: 600px) {
     /* INDEX */
+    #home_section{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
+        column-gap: 100px;
+        padding: 0 80px 0 80px;
+  
+        .article1 h1{
+          color: white;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 700;
+          font-size: 2.5em;
+        }
+      
+        .article1 h2{
+          color: white;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 700;
+          font-size: 1.1rem;
+        }
+        
+        .article1 p{
+          color: white;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 500;
+          font-size: .9rem;
+          opacity: .5;
+        }
+      }
     .astronaut_index{
-      width: 250px;
-      height: 250px;
-      background-size: contain;
-    }
-  
-    /* ABOUT US */
-    .about_us_container{
-      display: grid;
-      grid-template-rows: 1fr;
-      align-items: center;
-      justify-items: center;
-      column-gap: 10px;
-      padding: 0 00px 0 00px;
-      color: white
-    }
-  
-    .article2{
-      width: 80%;
-    }
-    
-    .astronaut_about_us{
       width: 200px;
       height: 200px;
       background-size: contain;
     }
-  
-    #tooling_container{
-      width: 350px;
-      height: 1070px;
-      transform: scale(.7);
+
+    //ABOUT US
+    $appWith: 35px;
+    $appHeight: 35px;
+    .about_us_container{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        column-gap: 100px;
+        padding: 0 80px 0 80px;
+        color: white;
+        .astronaut2{
+            display: grid;
+            grid-template-columns: 1fr;
+            align-items: center;
+            justify-items: center;
+            column-gap: 100px;
+            padding: 0 80px 0 50px;
+
+              p{
+                text-align:center;
+                font-size: 1rem;
+              }
+            
+              .astronaut_about_us{
+                width: 250px;
+                height: 250px;
+                background-size: contain;
+              }
+          }
+
+          
+
+          .article2 {
+            #tooling_container{
+                position: relative;
+                width: 250px;
+                height: 850px;
+                margin-bottom: 20px;
+
+                .wrapper {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    padding: 50px 10px 10px 10px;
+                    flex-direction: column;
+                    gap: 30px;
+                    padding: 50px;
+    
+                    p {
+                        position: relative;
+                        top: 10px;
+                        width: 120px;
+                        height: 40px;
+                        font-size: 0.9rem;
+                        margin-left: 60px;
+                        vertical-align: middle;
+                        color:white;
+                    }
+
+                    .app1, .app2, .app3, .app4, .app5, .app6, .app7, .app8, .app9, .app10, .app11, .app12{
+                        position: relative;
+                        width: $appWith;
+                        height: $appHeight;
+                    }
+                  }
+              }
+          } 
     }
-  
-    .wrapper {
-      display: grid;
-      grid-template-columns: 200px;
-      padding: 50px 10px 10px 10px;
-      flex-direction: column;
-      gap: 30px;
-      padding: 50px;
+
+    //SERVICES
+        .article3 p,
+        .cap p {
+          display: none;
+        }
+    
+        #services_container {
+          /* width: 100%; */
+          padding: 0;
+        }
+    
+        #section_services {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+    
+        .wrapper2 {
+          width: 80%;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          padding: 50px 10px 10px 10px;
+          flex-direction: column;
+        }
+    
+        .cap {
+          width: 60px;
+          height: 140px;
+          display: grid;
+          grid-template-rows: 1fr;
+          flex-direction: row;
+          align-items: center;
+          justify-self: center;
+          justify-items: center;
+        }
+    
+        .cap h3 {
+          font-size: 14px;
+          grid-column: 2 /1;
+          align-self: center;
+          justify-self: center;
+          text-align: center;
+        }
+    
+        .cap p {
+          position: relative;
+          font-size: 13px;
+          width: 60px;
+          grid-column: 1 /1;
+        }
+        }
+
+    //ABOUT US
+    .astronaut4{
+      width: 200px;
+      height: 250px;
+      background: url(../../svg/astronaut_contact.svg) no-repeat;
+      background-size: contain;
     }
-  
-    /* SERVICES */
-    .article3 p, .cap p{display: none;}
-    #services_container{
-      /* width: 100%; */
-      padding: 0;
-    }
-  
-    #section_services{
-      width: 100%;
+    
+    .contact_us{
+      position: relative;
+      width: 400px;
+      height: 400px;
+      padding: 30px;
+      border-radius: 25px;
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: start;
+      background-clip: padding-box;
+      overflow: hidden;
+      /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0.3+0,0+100 */
+      background: -moz-linear-gradient(left,  rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(left,  rgba(255,255,255,0.3) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to right,  rgba(255,255,255,0.3) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4dffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+    }
+
+    //PROJECTS
+    $projWith: 180px;
+    $projHeight: 120px;
+
+    .headline_projects {
+      font-family: 'Montserrat';
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: white;
+    }
+
+    p{font-size: 13px;}
+    #projects_container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      padding: 10px 10px 10px 10px;
+      flex-direction: column;
       justify-content: center;
-    }
-    .wrapper2 {
-      width: 80%;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      padding: 50px 10px 10px 10px;
-      flex-direction: column;
-    }
-  
-    .cap{
-      width: 60px;
-      height: 140px;
-      display: grid;
-      grid-template-rows: 1fr;
-      flex-direction: row;
-      align-items:center;
-      justify-self: center;
-      justify-items:center;
-    }
-    
-    .cap h3{
-      font-size: 14px;
-      grid-column: 2 /1;
-      align-self: center;
-      justify-self: center;
-      text-align: center;
-    }
-    
-    .cap p{
-      position: relative;
-      font-size: 13px;
-      width: 60px;
-      grid-column: 1 /1;
-    }
-  
-    /* FOOTER */
-    #nav_footer{
-      width: 270px;
-      height: 20px;
-      margin: 0;
-      padding: 0;
-      font-family: 'Montserrat', sans-serif;
-      font-size: .6rem;
-      color: white;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      align-content: space-around;
-      justify-content:space-around;
-      /* background-color: #FF0080; */
-    }
-    
-    #nav_footer li{
-      text-align: center;
-      width: 90px;
-      /* background-color: #FF0080; */
-    }
-    
-    #nav_footer a{
-      text-decoration: none;
-      color: white;
-    }
-    
-    footer p{
-      color: white;
-      font-family: 'Montserrat', sans-serif;
-      font-size: .6rem;
-    }
-  }
-  
-  @media only screen and (max-width: 400px) {
-    /* INDEX */
-    .astronaut_index{
-      width: 250px;
-      height: 250px;
-      background-size: contain;
-    }
-  
-    /* ABOUT US */
-    .about_us_container{
-      display: grid;
-      grid-template-rows: 1fr;
-      align-items: center;
-      justify-items: center;
-      column-gap: 10px;
-      padding: 0 00px 0 00px;
-      color: white
-    }
-  
-    .article2{
-      width: 80%;
-    }
-    
-    .astronaut_about_us{
-      width: 200px;
-      height: 200px;
-      background-size: contain;
-    }
-  
-    #tooling_container{
-      width: 350px;
-      height: 1070px;
-      transform: scale(.7);
-    }
-  
-    .wrapper {
-      display: grid;
-      grid-template-columns: 200px;
-      padding: 50px 10px 10px 10px;
-      flex-direction: column;
       gap: 30px;
-      padding: 50px;
-    }
-  
-    /* SERVICES */
-    .article3 p, .cap p{display: none;}
-    .section_services{
-      width: 80%;
-      padding: 0;
-    }
-  
-    .astronaut3{
-      width: 260px;
-      height: 210px;
-    }
-    .wrapper2 {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      padding: 50px 10px 10px 10px;
-      flex-direction: column;
-      gap: 30px;
-      padding: 50px;
-    }
-  
-    .cap{
-      width: 60px;
-      height: 140px;
-      display: grid;
-      grid-template-rows: 1fr;
-      flex-direction: row;
-      align-items:center;
-      justify-self: center;
-      justify-items:center;
-    }
-    
-    .cap h3{
-      font-size: 14px;
-      grid-column: 2 /1;
-      align-self: center;
-      justify-self: center;
-      text-align: center;
-    }
-    
-    .cap p{
-      position: relative;
-      font-size: 13px;
-      width: 60px;
-      grid-column: 1 /1;
-    }
-  
-    /* FOOTER */
-    #nav_footer{
-      width: 270px;
-      height: 20px;
-      margin: 0;
-      padding: 0;
-      font-family: 'Montserrat', sans-serif;
-      font-size: .6rem;
-      color: white;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      align-content: space-around;
-      justify-content:space-around;
-      /* background-color: #FF0080; */
-    }
-    
-    #nav_footer li{
-      text-align: center;
-      width: 90px;
-      /* background-color: #FF0080; */
-    }
-    
-    #nav_footer a{
-      text-decoration: none;
-      color: white;
-    }
-    
-    footer p{
-      color: white;
-      font-family: 'Montserrat', sans-serif;
-      font-size: .6rem;
-    }
-  }
-
-  $breakpoints: (
-    'xs': 0,
-    'sm': 480px,
-    'md': 768px,
-    'lg': 992px,
-    'xl': 1200px
-  );
-
-  @mixin md {
-    @media (min-width: map-get($breakpoints, "md")){
-      @content;
+      padding: 10px;
+      
+      .project1, .project2, .project3, .project4, .project5, .project6, .project7, .project8, .tooltiptext{
+        width: $projWith;
+        height: $projHeight;
+        font-size: 10px;
+      }
     }
   }

@@ -10,7 +10,6 @@ $appHeight: 50px;
     justify-items: center;
     column-gap: 100px;
     padding: 0 80px 0 80px;
-    color: white;
 
     .astronaut2 {
         display: grid;
@@ -19,7 +18,6 @@ $appHeight: 50px;
         justify-items: center;
         column-gap: 60px;
         padding: 0 80px 0 80px;
-
         color: white;
 
         p {
@@ -39,17 +37,20 @@ $appHeight: 50px;
     }
 
     .article2 {
+        position: relative;
+        display: flex;
+        flex-direction: column;
         h1 {
             font-size: 2em;
             margin: 0.67em 0;
             font-family: 'Montserrat';
+            color: white;
         }
 
         #tooling_container {
-            position: relative;
+            position:relative;
             width: 700px;
             height: 400px;
-            top: 0;
             border-radius: 25px;
             background-clip: padding-box;
             overflow: hidden;
@@ -62,7 +63,7 @@ $appHeight: 50px;
             /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
             filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4dffffff', endColorstr='#00ffffff', GradientType=1);
             /* IE6-9 */
-
+            
             &::before {
                 content: "";
                 position: absolute;
@@ -80,6 +81,7 @@ $appHeight: 50px;
             }
 
             .wrapper {
+                position: relative;
                 display: grid;
                 grid-template-columns: 200px 200px 200px;
                 padding: 50px 10px 10px 10px;
@@ -96,105 +98,92 @@ $appHeight: 50px;
                     vertical-align: middle;
                     color: white;
                 }
-            }
 
-
-
-            .app1 {
-                position: relative;
-                width: $appWith;
-                height: $appHeight;
-                background: url('../../svg/js_logo.svg') no-repeat;
-            }
-
-            .app2 {
-                position: relative;
-                width: $appWith;
-                height: $appHeight;
-                background: url('../../svg/react_logo.svg') no-repeat;
-            }
-
-            .app3 {
-                position: relative;
-                width: $appWith;
-                height: $appHeight;
-                background: url('../../svg/py_logo.svg') no-repeat;
-            }
-
-            .app4 {
-                position: relative;
-                width: $appWith;
-                height: $appHeight;
-                background: url('../../svg/html5_logo.svg') no-repeat;
-            }
-
-            .app5 {
-                position: relative;
-                width: $appWith;
-                height: $appHeight;
-                background: url('../../svg/css_logo.svg') no-repeat;
-            }
-
-            .app6 {
-                position: relative;
-                width: $appWith;
-                height: $appHeight;
-                background: url('../..//svg/sass_logo.svg') no-repeat;
-            }
-
-            .app7 {
-                position: relative;
-                width: $appWith;
-                height: $appHeight;
-                background: url('../../svg/bs_logo.svg') no-repeat;
-            }
-
-            .app8 {
-                position: relative;
-                width: $appWith;
-                height: $appHeight;
-                background: url('../../svg/ps_logo.svg') no-repeat;
-            }
-
-            .app9 {
-                position: relative;
-                width: $appWith;
-                height: $appHeight;
-                background: url('../../svg/ai_logo.svg') no-repeat;
-            }
-
-            .app10 {
-                position: relative;
-                width: $appWith;
-                height: $appHeight;
-                background: url('../..//svg/fi_logo.svg') no-repeat;
-            }
-
-            .app11 {
-                position: relative;
-                width: $appWith;
-                height: $appHeight;
-                background: url('../../svg/ae_logo.svg') no-repeat;
-            }
-
-            .app12 {
-                position: relative;
-                width: $appWith;
-                height: $appHeight;
-                background: url('../../svg/pr_logo.svg') no-repeat;
+                .app1 {
+                    position: relative;
+                    width: $appWith;
+                    height: $appHeight;
+                    background: url('../../svg/js_logo.svg') no-repeat;
+                }
+    
+                .app2 {
+                    position: relative;
+                    width: $appWith;
+                    height: $appHeight;
+                    background: url('../../svg/react_logo.svg') no-repeat;
+                }
+    
+                .app3 {
+                    position: relative;
+                    width: $appWith;
+                    height: $appHeight;
+                    background: url('../../svg/py_logo.svg') no-repeat;
+                }
+    
+                .app4 {
+                    position: relative;
+                    width: $appWith;
+                    height: $appHeight;
+                    background: url('../../svg/html5_logo.svg') no-repeat;
+                }
+    
+                .app5 {
+                    position: relative;
+                    width: $appWith;
+                    height: $appHeight;
+                    background: url('../../svg/css_logo.svg') no-repeat;
+                }
+    
+                .app6 {
+                    position: relative;
+                    width: $appWith;
+                    height: $appHeight;
+                    background: url('../..//svg/sass_logo.svg') no-repeat;
+                }
+    
+                .app7 {
+                    position: relative;
+                    width: $appWith;
+                    height: $appHeight;
+                    background: url('../../svg/bs_logo.svg') no-repeat;
+                }
+    
+                .app8 {
+                    position: relative;
+                    width: $appWith;
+                    height: $appHeight;
+                    background: url('../../svg/ps_logo.svg') no-repeat;
+                }
+    
+                .app9 {
+                    position: relative;
+                    width: $appWith;
+                    height: $appHeight;
+                    background: url('../../svg/ai_logo.svg') no-repeat;
+                }
+    
+                .app10 {
+                    position: relative;
+                    width: $appWith;
+                    height: $appHeight;
+                    background: url('../..//svg/fi_logo.svg') no-repeat;
+                }
+    
+                .app11 {
+                    position: relative;
+                    width: $appWith;
+                    height: $appHeight;
+                    background: url('../../svg/ae_logo.svg') no-repeat;
+                }
+    
+                .app12 {
+                    position: relative;
+                    width: $appWith;
+                    height: $appHeight;
+                    background: url('../../svg/pr_logo.svg') no-repeat;
+                }
             }
         }
     }
 }
 
-// 992px window width and more
-body{
-    @include md{
-        /* ABOUT US by meqdiaquerie*/
-        background-color: #fff;
-
-    
-        
-    
-    } 
-}
