@@ -33,9 +33,9 @@ header{
   }
   
   .navbar-collapse{
-    width: 200px;
+    width: 250px;
     flex-grow: 0;
-    //background-color: #8b1852;
+    // background-color: #8b1852;
   }
   
   .collapse{
@@ -43,11 +43,13 @@ header{
   }
   
   .navbar-nav a{
+    width: 100px;
     text-decoration: none;
     text-align: center;
     color: white;
+    border-radius: 20px;
     transition: .5s cubic-bezier(0.23, 1, 0.320, 1);
-    margin-left: 20px;
+    margin-left: 0px;
   }
   
   .navbar-nav a:hover{
@@ -55,7 +57,9 @@ header{
     text-align: center;
     background-color:#00D1FF;
     border-radius: 20px;
-    padding: 10px 25px 10px 25px;
+    box-shadow: 0px 0px 20px 5px rgba(5, 255, 255, 0.6),
+    0 0 35px 5px #f0f;
+    // padding: 10px 25px 10px 25px;
   }
   
   .container-fluid{

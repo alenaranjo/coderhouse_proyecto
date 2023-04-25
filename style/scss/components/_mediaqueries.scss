@@ -1,6 +1,38 @@
 //---------------------------------------------------//
 /*************** MEDIAQUERIES **************/
 @media only screen and (max-width: 991px) {
+  //NAVBAR
+  .navbar-nav .nav-link{
+    position: relative;
+    width:100%;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+    // padding: 10px 50% 10px 50%;
+    transition: .5s cubic-bezier(0.23, 1, 0.320, 1);
+    // margin-left: 220px;
+  }
+
+  .navbar-nav a:hover{
+    position: relative;;
+    width:100%;
+    color:#fff;
+    align-content:center;
+    text-align: center;
+    background-color:#00D1FF;
+    border-radius: 20px;
+    // padding: 10px 50% 10px 50%;
+  }
+  .navbar-nav{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content:flex-end;
+    justify-content: space-evenly;
+    }
+
    //INDEX
     #home_section{
       display: grid;
@@ -15,7 +47,7 @@
         font-family: 'Montserrat', sans-serif;
         font-size: 3em;
         font-weight: 700;
-    }
+      }
     }
   
     .headline1_index{
@@ -185,7 +217,18 @@
       column-gap: 20px;
       /* padding: 80px 80px 80px 80px; */
     }
-    
+
+    #labels{
+      width: 350px;
+      height: 20px;
+      padding: 20px;
+      color: white;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 1px;
+      // background-color: rgba(255, 255, 255, 0.301);
+    }
 
   
   @media only screen and (max-width: 600px) {
@@ -296,58 +339,73 @@
     }
 
     //SERVICES
-        .article3 p,
-        .cap p {
-          display: none;
-        }
-    
-        #services_container {
-          /* width: 100%; */
-          padding: 0;
-        }
-    
-        #section_services {
-          width: 100%;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-        }
-    
-        .wrapper2 {
-          width: 80%;
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          padding: 50px 10px 10px 10px;
-          flex-direction: column;
-        }
-    
-        .cap {
-          width: 60px;
-          height: 140px;
-          display: grid;
-          grid-template-rows: 1fr;
-          flex-direction: row;
-          align-items: center;
-          justify-self: center;
-          justify-items: center;
-        }
-    
-        .cap h3 {
-          font-size: 14px;
-          grid-column: 2 /1;
-          align-self: center;
-          justify-self: center;
-          text-align: center;
-        }
-    
-        .cap p {
-          position: relative;
-          font-size: 13px;
-          width: 60px;
-          grid-column: 1 /1;
-        }
-        }
+    $servWidth: 90px;
+    $servHeight: 90px;
+
+    .article3 p,
+    .cap p {
+      display: none;
+    }
+
+    #services_container {
+      /* width: 100%; */
+      padding: 0;
+    }
+
+    #section_services {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .headline_services{
+        text-align: center;
+        font-family: "Montserrat";
+        text-transform: uppercase;
+      }
+    }
+
+    .wrapper2 {
+      width: 80%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 50px 10px 10px 10px;
+      flex-direction: column;
+      column-gap: 60px;
+    }
+
+    .cap {
+      width: 60px;
+      height: 140px;
+      display: grid;
+      grid-template-rows: 1fr;
+      flex-direction: row;
+      align-items: center;
+      justify-self: center;
+      justify-items: center;
+    }
+
+    .cap h3 {
+      font-size: 14px;
+      grid-column: 2 /1;
+      align-self: center;
+      justify-self: center;
+      text-align: center;
+    }
+
+    .cap p {
+      position: relative;
+      font-size: 13px;
+      width: 60px;
+      grid-column: 1 /1;
+    }
+
+    .service1, .service2, .service3, .service4{
+      width: $servWidth;
+      height: $servHeight;
+    }
+  }
 
     //ABOUT US
     .astronaut4{
@@ -360,7 +418,7 @@
     .contact_us{
       position: relative;
       width: 400px;
-      height: 400px;
+      height: 350px;
       padding: 30px;
       border-radius: 25px;
       display: flex;

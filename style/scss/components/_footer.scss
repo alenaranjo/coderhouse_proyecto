@@ -110,5 +110,6 @@ footer{
 .fb:hover, .in:hover, .ig:hover, .wp:hover, .ig:hover{
   width: 35px;
   height: 35px;
+  border-radius: 50%;
   filter: brightness(0) saturate(100%) invert(72%) sepia(36%) saturate(6063%) hue-rotate(151deg) brightness(102%) contrast(109%);
 }

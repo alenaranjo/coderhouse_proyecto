@@ -1,3 +1,6 @@
+$servWidth: 60px;
+$servHeight: 60px;
+
 /* PAGE SERVICES */
 #section_services{
     display: grid;
@@ -11,6 +14,7 @@
 
     .headline_services{
       font-family: "Montserrat";
+      text-transform: uppercase;
     }
   }
   
@@ -33,6 +37,7 @@
     width: 320px;
     height: 260px;
     background: url(../../svg/astronaut_services.svg) no-repeat;
+    filter: drop-shadow(0px 0px 50px rgba(255, 83, 255, 0.3));
     background-size: contain;
   }
   
@@ -79,32 +84,32 @@
   
   .service1{
     position: relative;
-    width: 60px;
-    height: 60px;
+    width: $servWidth;
+    height: $servHeight;
     background: url('../../svg/service1.svg') no-repeat;
     background-size: 100% 100%;
   }
   
   .service2{
     position: relative;
-    width: 60px;
-    height: 60px;
+    width: $servWidth;
+    height: $servHeight;
     background: url('../..//svg/service2.svg') no-repeat;
     background-size: 100% 100%;
   }
   
   .service3{
     position: relative;
-    width: 60px;
-    height: 60px;
+    width: $servWidth;
+    height: $servHeight;
     background: url('../../svg/service3.svg') no-repeat;
     background-size: 100% 100%;
   }
   
   .service4{
     position: relative;
-    width: 60px;
-    height: 60px;
+    width: $servWidth;
+    height: $servHeight;
     background: url('../../svg/service4.svg') no-repeat;
     background-size: 100% 100%;
   }
