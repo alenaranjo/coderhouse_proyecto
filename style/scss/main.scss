@@ -11,7 +11,11 @@
   main{
     position: relative;
     margin-top: 0px;
-    // width: 100%;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: center;
     // height: 80vh;
     // background-color: rgba(32, 0, 57, 0.5);
   }

@@ -21,6 +21,7 @@ $projHeight: 160px;
   }
 }
   #projects_container {
+    width: 50vw;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 10px 10px 10px 10px;
