@@ -10,7 +10,7 @@ $appHeight: 50px;
     align-items: center;
     justify-items: center;
     column-gap: 100px;
-    padding: 0 80px 0 80px;
+    // padding: 0 80px 0 80px;
 
     .astronaut2 {
         display: grid;
@@ -42,6 +42,7 @@ $appHeight: 50px;
         position: relative;
         display: flex;
         flex-direction: column;
+        left: 0px;
         h1 {
             font-size: 2em;
             margin: 0.67em 0;

@@ -92,7 +92,6 @@ header {
   align-items: center;
   justify-items: center;
   column-gap: 100px;
-  padding: 0 80px 0 80px;
 }
 .about_us_container .astronaut2 {
   display: grid;
@@ -121,6 +120,7 @@ header {
   position: relative;
   display: flex;
   flex-direction: column;
+  left: 0px;
 }
 .about_us_container .article2 h1 {
   font-size: 2em;
@@ -251,6 +251,12 @@ header {
 }
 
 /* PAGE SERVICES */
+#main_services {
+  position: relative;
+  margin-top: 0px;
+  height: 100vh;
+}
+
 #section_services {
   width: 70vw;
   display: grid;
@@ -631,6 +637,7 @@ header {
 #main_projects {
   position: relative;
   margin-top: 0px;
+  height: 100vh;
 }
 
 /* PAGE PROJECTS */
@@ -848,6 +855,9 @@ header {
     width: 100%;
     background: hwb(0 0% 100%/0.5);
   }
+  .about_us_container .article2 {
+    left: -80px;
+  }
   .article3 {
     display: grid;
     grid-template-columns: 1fr;
@@ -861,6 +871,10 @@ header {
   .article3 p {
     text-align: center;
     opacity: 0.7;
+  }
+  #main_projects {
+    position: relative;
+    margin-top: 0px;
   }
   #projects_container {
     display: grid;

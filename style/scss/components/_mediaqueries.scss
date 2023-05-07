@@ -74,6 +74,14 @@
       background: hwb(0 0% 100% / 0.5);
     }
 
+    //ABOUT US
+    .about_us_container {
+      .article2 {
+        left: -80px;
+      }
+    }
+    
+
     //SERVICES
     .article3{
       display: grid;
@@ -92,6 +100,13 @@
     }
 
     //PROJECTS
+    #main_projects{
+      position: relative;
+      margin-top: 0px;
+      // width: 100%;
+      // height: 80vh;
+    }
+
     #projects_container {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
